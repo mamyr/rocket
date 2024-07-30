@@ -1,0 +1,22 @@
+{
+    "id": "Identity",
+    "name": "Name",
+    "title": "Title",
+    "nameEng": "Name in english",
+    "titleEng": "Title in english",
+    "text": "Text",
+    "enterName": "Enter name of the book in russian",
+    "enterTitle": "Enter title of the book in russian",
+    "enterText": "Enter text of the book in russian",
+    "language": "Select language",
+    "addBook": "Add a book",
+    "createBook": "Create",
+    "waitMessage": "Please wait, the page is still loading...",
+    "searchBookTitle": "Search for book",
+    "searchBook": "Search/Reset list",
+    "readBook": "Read a book",
+    "createDate": "Added date",
+    "searchBookTitleAll": "Leave the name empty for displaying all book list",
+    "sortNameBook": "Sort books by name",
+    "sortDateBook": "Sort books by date"
+}
