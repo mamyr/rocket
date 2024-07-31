@@ -2,7 +2,6 @@ const langID = () => {
     let selectedIndex = document.getElementById("langID").selectedIndex;
     let languagesSelect = document.getElementById("langID");
     console.log(languagesSelect.options[selectedIndex].value);
-    console.log(document.location.host);
     let lang = languagesSelect.options[selectedIndex].value;
     if(lang != "Выбор языка")
         document.location.href = document.location.pathname+'?langID='+lang;
@@ -18,17 +17,18 @@ const showDiv = () => {
      
   }
 
-const showRead = (name, title, text) => {
+const showRead = (id, name, title, text, image) => {
+    document.getElementById('id').value = id;
     document.getElementById('name').value = name;
     document.getElementById('title').value = title;
     document.getElementById('text').value = text;
+    document.getElementById('image').src = image;
 }
 
 const listSortName = (e) => {
     let selectedIndex = document.getElementById("langID").selectedIndex;
     let languagesSelect = document.getElementById("langID");
     console.log(languagesSelect.options[selectedIndex].value);
-    console.log(document.location.host);
     let lang = languagesSelect.options[selectedIndex].value;
 
     if (document.getElementById(e).className === "mobile-arrow down"){
@@ -50,7 +50,6 @@ const listSortDate = (e) => {
     let selectedIndex = document.getElementById("langID").selectedIndex;
     let languagesSelect = document.getElementById("langID");
     console.log(languagesSelect.options[selectedIndex].value);
-    console.log(document.location.host);
     let lang = languagesSelect.options[selectedIndex].value;
 
     if (document.getElementById(e).className === "mobile-arrow down"){
@@ -65,5 +64,19 @@ const listSortDate = (e) => {
             document.location.href = document.location.pathname+'?langID='+lang+'&sort=date&order=desc';
         else
             document.location.href = document.location.pathname+'?sort=date&order=desc';
+    }
+}
+
+const showImg = () => {
+    let file = document.getElementById("avatar").files[0];
+    let img = document.getElementById("imageBook");
+    img.setAttribute("src",URL.createObjectURL(file));
+    const reader = new FileReader();
+
+    var base64data = "";
+    reader.readAsDataURL(file); 
+    reader.onloadend = function() {
+        base64data = reader.result;                
+        document.getElementById("fileblob").value = base64data;
     }
 }

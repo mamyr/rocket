@@ -18,5 +18,15 @@
     "createDate": "Added date",
     "searchBookTitleAll": "Leave the name empty for displaying all book list",
     "sortNameBook": "Sort books by name",
-    "sortDateBook": "Sort books by date"
+    "sortDateBook": "Sort books by date",
+    "auth": "Please, sign in ...",
+    "login": "Your login",
+    "enterLogin": "Enter your login here",
+    "password": "Your password",
+    "enterPassword": "Enter your password here",
+    "signin": "Sign in",
+    "errorAuth": "You are not authorised. Please, register.",
+    "signup": "Sign up",
+    "editBook": "Save",
+    "imageBook": "Choose a picture:"
 }
